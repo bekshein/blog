@@ -19,8 +19,8 @@
 
     <ul>
       <li class="category">Website</li>
-      <li><%= link_to 'Blog', root_path %></li>
-      <li><%= link_to 'About', about_path %></li>
+      <li class="<%= active_class('/') %>"><%= link_to 'Blog', root_path %></li>
+      <li class="<%= active_class('/about') %>"><%= link_to 'About', about_path %></li>
     </ul>
 
     <ul>

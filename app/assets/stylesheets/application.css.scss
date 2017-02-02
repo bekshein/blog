@@ -52,7 +52,7 @@ a {
 			font-weight: 700;
 			font-size: 0.7em;
 			text-transform: uppercase;
-			color: #33acb7;
+			color: #1499A6;
 		}
 		li {
 			padding: .5em 0;
@@ -114,7 +114,7 @@ a {
 			display: inline;
 		}
 		a {
-			color: #9eafba;
+			color: #708A9A;
 			text-decoration: none;
 		}
 		.buttons {
@@ -141,7 +141,7 @@ a {
 				}
 			}
 		}
-		.date_and_author {
+		.date {
 			color: #9eafba;
 			margin: .5em 0 0 0;
 		}
@@ -160,13 +160,19 @@ a {
 			line-height: 1.75;
 			white-space: pre-line;
 		}
-		.date_and_author {
+		.date {
 			color: #9eafba;
-			margin: .5em 0 2em 0;
+			margin: .75em 0 1em 0;
+			a {
+				color: #708A9A;
+				&:hover {
+					color: #33acb7;
+				}
+			}
 		}
 		#comments {
 			h2 {
-				margin: 3em 0 1em 0;
+				margin: 3em 0 0 0;
 				border-bottom: 1px solid #d6dce0;
 				padding-bottom: 0.5em;
 			}
@@ -175,7 +181,7 @@ a {
 			}
 			.comment {
 				border-bottom: 1px solid #d6dce0;
-				padding: 1.5em 2em;
+				padding: 1em;
 				.clear_both {
 					clear: both;
 				}
@@ -261,6 +267,113 @@ a {
 		&:hover {
 			border: 1px solid #33acb7;
 			color: #33acb7;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#sidebar {
+		width: 80px;
+		#logo {
+			right: 1.25em;
+		}
+		ul {
+			text-align: center;
+			padding: 0;
+			li {
+				padding: .25em 0;
+				a {
+					font-size: 0.7em;
+				}
+			}
+		}
+		.sign_in {
+			text-align: center;
+			right: 1em;
+		}
+	}
+
+	#main_content {
+		margin-left: 80px;
+		#header {
+			p {
+				display: none;
+			}
+			.buttons {
+				float: none;
+				margin-bottom: -6px;
+				.button {
+					margin-left: .5em;
+				}
+			}
+		}
+		.post_wrapper {
+			padding: 2.5em;
+			.title {
+				a {
+					font-size: 1.25em;
+				}
+			}
+		}
+		#post_content {
+			padding: .75em 2.5em;
+			.title {
+				font-size: 1.8em;
+			}
+			.body {
+				font-size: 1em;
+				line-height: 1.5;
+				white-space: pre-line;
+			}
+			.date {
+				font-size: .7em;
+			}
+			#comments {
+				h2 {
+					margin: 2em 0 0 0;
+				}
+				.comment {
+					.comment_content {
+						.comment_name {
+							font-size: 0.6em;
+						}
+						.comment_body {
+							font-size: 1em;
+						}
+						.comment_time {
+							margin-top: .9em;
+							font-size: .7em;
+						}
+					}
+					.button {
+						font-size: .7em;
+					}
+				}
+				input[type="text"], textarea {
+					width: 70%;
+				}
+			}
+		}
+		#page_wrapper {
+			#profile_image {
+				width: 220px;
+			}
+			#content {
+				h1 {
+					font-weight: 500;
+					font-size: 1.8em;
+				}
+				p {
+					font-size: 1em;
+					line-height: 1.5;
+				}
+			}
+		}
+		input[type="text"] {
+			height: 20px;
+		}
+		input[type="submit"] {
+			font-size: .9em;
 		}
 	}
 }

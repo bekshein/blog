@@ -29,6 +29,8 @@ gem 'bcrypt', '~> 3.1.7'
 # Use for user authentication
 gem 'devise', '~> 4.2'
 
+gem 'rails_12factor', '~> 0.0.3'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
